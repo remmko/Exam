@@ -1,0 +1,40 @@
+.carousel-inner{
+    height: 800px;
+}
+
+#present {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  #present p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  #present h1 {
+    color: #3366cc;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #present h2 {
+    color: #cc3366;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #present a {
+    color: #009900;
+    text-decoration: none;
+  }
+  
+  #present a:hover {
+    text-decoration: underline;
+  }
+  
