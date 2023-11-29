@@ -1,4 +1,5 @@
 <?php
     function ctrlAuth($request, $response, $container){
-        include "src/views/auth.php";
+        $response -> setTemplate( "auth.php");
+        return $response;
     }

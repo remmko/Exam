@@ -29,11 +29,12 @@ use Google\Service\ShoppingContent\Headers;
         ctrlAll($request, $response, $container);
     }else if($r=="auth"){ 
         ctrlAuth($request, $response, $container);
-    }else if($r=="logout"){ 
+    }else if($r=="logout"){         
         ctrlLogout($request, $response, $container);
     }else if($r=="try"){ 
         ctrlTry($request, $response, $container);
     }
+
 
 
 $response -> response();

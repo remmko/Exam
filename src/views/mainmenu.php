@@ -26,11 +26,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?r=all">All inscriptions</a>
                     </li>
-                    <?php if($_SESSION["identified"]){
+                    <?php if($_SESSION["identified"]=="true"){
                         ?> <li class="nav-item">
-                                <a class="nav-link" href="index.php?r=logut">Logout</a>
+                                <a class="nav-link" href="index.php?r=logout">Logout</a>
                             </li>
                             <?php
+
+
                     }?>
                    
                    

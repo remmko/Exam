@@ -32,7 +32,7 @@ class Response
      *
      * @param $path string path fins a la carpeta de plantilles.
      **/
-    public function __construct($path = "../views/")
+    public function __construct($path = "src/views/")
     {
         $this->path = $path;
     }
@@ -140,6 +140,7 @@ class Response
                 header($this->header);
             }
             extract($this->values);
+
             include $this->path . $this->template;
         }
     }

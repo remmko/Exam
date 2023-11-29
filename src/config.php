@@ -9,7 +9,7 @@ $config = [
         "user" => "hoteladmin",
         "pass" => "opensource",
         "db" => "exam",
-        "host" => "localhost"
+        "host" => "admin.remmko.online"
     ],
 ];
 

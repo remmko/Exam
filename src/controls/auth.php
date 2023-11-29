@@ -1,17 +1,24 @@
 <?php
 
 function ctrlTry($request, $response, $container){
-    $code = 'codeauth'; 
-    if (isset($_POST['codi']) && $_POST['codi'] == $code) {
-        session_start();
-        $_SESSION['identified'] = true;
-        $response -> redirect("Location: index.php?r=all");
-        return $response;
-      
-    } else {
-        $response -> redirect("Location: index.php?r=auth");
-       
-    }
+
+    session_start();
+
+        $code = 'codeauth';
+
+        $enterCode = $request-> get(INPUT_POST, "code");
+
+        if ($enterCode == $code) {
+            // Authentication successful
+            $_SESSION['identified'] = "true";
+            echo "Authentication successful!";
+            $response -> redirect("Location: index.php?r=all");
+            return $response;
+        } else {
+            // Authentication failed
+            echo "Authentication failed. Please check your username and password.";
+        }
+   
 }
 
 

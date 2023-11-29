@@ -1,11 +1,12 @@
 <?php
 
     function ctrlAll($request, $response, $container){
-        if($_SESSION["identified"]){
-
+        if($_SESSION["identified"]=="true"){
             $getAll = $container -> getAll();
             $getAll = $getAll -> getAll();
-            include "src/views/all.php";
+            $response -> set("getAll",$getAll);
+            $response -> setTemplate("all.php");
+            return $response;
         }else{
             $response -> redirect("Location: index.php?r=auth");
             return $response;
